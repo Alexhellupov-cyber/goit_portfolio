@@ -1,0 +1,132 @@
+/* RESET STYLES*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* BASE STYLES */
+:root {
+  --black: #1c1d20;
+  --dark: #242527;
+  --dark-light: #3b3b3b;
+  --red: #ed3b44;
+  --white: #fafafa;
+  --timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  font-family: 'Inter Tight';
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--white);
+  background-color: var(--black);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  padding: 0 16px;
+}
+
+/* Mob Adaptive */
+@media screen and (min-width: 375px;) {
+  .container {
+    width: 375px;
+    margin: 0 auto;
+  }
+}
+
+/* Tab Adaptive */
+@media screen and (min-width: 768px;) {
+  .container {
+    width: 768;
+    padding: 0 32px;
+  }
+}
+
+/* Desc Adaptive */
+@media screen and (min-width: 1440px;) {
+  .container {
+    width: 1440;
+  }
+}
+
+/* COVERS - DON'T TOUCH PLEASEEEE! */
+/* COVERS - DON'T TOUCH PLEASEEEE! */
+/* COVERS - DON'T TOUCH PLEASEEEE! */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.covers-section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(/img/covers/vectors@1x.png);
+}
+
+.covers-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  max-height: 508px;
+}
+
+.covers-list {
+  transform: rotate(17deg);
+  display: flex;
+  column-gap: 40px;
+  margin-bottom: 40px;
+}
+
+.covers-list-item {
+  width: 283px;
+  height: 163px;
+}
+
+.cover-photo {
+  object-fit: cover;
+  /* width: 283px;
+  height: 163px; */
+}
