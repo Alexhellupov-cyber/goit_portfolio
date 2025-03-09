@@ -9,3 +9,23 @@ import './js/covers';
 import './js/reviews';
 import './js/work-together';
 import './js/colors';
+
+document.addEventListener('DOMContentLoaded', () => {
+    const scrollUpButton = document.getElementById('scrollUp');
+    const scrollThreshold = 300;
+  
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > scrollThreshold) {
+        scrollUpButton.classList.remove('hidden');
+      } else {
+        scrollUpButton.classList.add('hidden');
+      }
+    });
+  
+    scrollUpButton.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+    });
+  });
