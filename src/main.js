@@ -8,7 +8,7 @@ import './js/faq';
 import './js/covers';
 import './js/reviews';
 import './js/work-together';
-import './js/colors';
+
 
 document.addEventListener('DOMContentLoaded', () => {
   const scrollUpButton = document.getElementById('scrollUp');
