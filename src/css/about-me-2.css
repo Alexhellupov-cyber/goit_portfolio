@@ -1,0 +1,116 @@
+.skills-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 90%;
+}
+.about-me-two.container {
+  padding-bottom: 32px;
+}
+
+.skills.swiper {
+  position: relative;
+  overflow: hidden;
+  max-width: 260px;
+  height: auto;
+  margin: 0;
+}
+
+.swiper-wrapper {
+  display: flex;
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+.skill-list.swiper-wrapper {
+  margin: 0;
+}
+
+.skill-item.swiper-slide {
+  width: 50%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+}
+
+.skill-item.swiper-slide.skill-item-circle {
+  aspect-ratio: 1 / 1;
+  width: clamp(80px, 20vw, 200px);
+  border-radius: 50%;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.swiper-slide-active {
+  background-color: #1e2f2c;
+}
+
+.btn-next {
+  fill: none;
+  stroke: #3b3b3b;
+  width: clamp(40px, 5vw, 80px);
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 375px) {
+  .skills-container {
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 55px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .btn-next {
+    width: 28px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .skills.swiper {
+    max-width: 600px;
+  }
+  .about-me-two.container {
+    padding-bottom: 48px;
+  }
+  .skills-container {
+    max-width: 704px;
+    gap: 64px;
+  }
+  .skill-list.swiper-wrapper {
+    margin-bottom: 0;
+  }
+  .skill-item.swiper-slide.skill-item-circle {
+    height: 100%;
+  }
+  .skill-item.swiper-slide {
+    font-size: 20px;
+  }
+  .btn-next {
+    width: 80px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .skills-container {
+    max-width: 1312px;
+    gap: 72px;
+    padding: 0 32px;
+  }
+  .skills.swiper {
+    max-width: 1200px;
+  }
+  .btn-next {
+    width: 40px;
+  }
+  .about-me-two.container {
+    padding-bottom: 82px;
+  }
+}

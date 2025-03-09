@@ -1,0 +1,128 @@
+/* #region Benefits Mobile */
+
+.benefits {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.benefits-all {
+  padding: 0 16px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.benefits-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+  margin-bottom: 32px;
+}
+.benefits-ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.card {
+  border-radius: 20px;
+  padding: 24px;
+  width: 344px;
+  height: 270px;
+  background: #242527;
+}
+
+.benefits-icons {
+  border-radius: 10px;
+  padding: 12px;
+  width: 48px;
+  height: 48px;
+  background: #2b4441;
+  margin-bottom: 64px;
+}
+
+.benefits-card {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  margin-bottom: 8px;
+}
+
+.benefits-text {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
+}
+
+.button-benefits {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  padding: 18px 36px;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  display: inline-block;
+}
+.button-benefits:hover,
+.button-benefits:focus {
+  border: 1px solid #fafafa;
+}
+
+/* #endregion Benefits Mobile */
+
+/* #region Benefits Tablet */
+
+@media screen and (min-width: 768px) {
+  .benefits {
+    padding: 48px 0;
+  }
+
+  .benefits-all {
+    padding: 0 32px;
+    max-width: 768px;
+  }
+
+  .benefits-ul {
+    margin-bottom: 64px;
+  }
+}
+
+/* #endregion Benefits Tablet */
+
+/* #region Benefits Desktop */
+
+@media screen and (min-width: 1440px) {
+  .benefits {
+    padding: 82px 0;
+  }
+
+  .benefits-all {
+    display: flex;
+    max-width: 1440px;
+  }
+  .benefits-ul {
+    width: 680px;
+  }
+
+  .card {
+    width: 332px;
+  }
+
+  .benefits-title {
+    margin-right: auto;
+  }
+}
+
+/* #endregion Benefits Desktop */
