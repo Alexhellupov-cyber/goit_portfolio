@@ -12,17 +12,131 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500..600&display=swap" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <title>Portfolio CTRL_C\CTRL_V</title>
     <script type="module" crossorigin src="/goit_portfolio/index.js"></script>
     <link rel="modulepreload" crossorigin href="/goit_portfolio/assets/vendor-v_60ckUa.js">
     <link rel="stylesheet" crossorigin href="/goit_portfolio/assets/vendor-EHAfD6Pr.css">
-    <link rel="stylesheet" crossorigin href="/goit_portfolio/assets/index-DrMKb-wQ.css">
+    <link rel="stylesheet" crossorigin href="/goit_portfolio/assets/index-D6Bod8N_.css">
   </head>
   <body>
-    <load src="./partials/header.html">
-    <load src="./partials/header-menu.html">
+    <header class="header">
+    <div class="container header-container">
+        <a href="./index.html" class="header-img-box">
+
+            <picture>
+                <img class="header-image" srcset="../img/header/logo.webp 1x, ../img/header/logo_2x.webp 2x" src="../img/header/logo.webp" alt="logo" width="80" height="80" loading="lazy" title="logo">
+            </picture>
+            <div>
+                <!-- <svg class="name-icon">
+                    <use href="/assets/svg/icons.svg#icon-jefferson"></use>
+                </svg> -->
+                <!-- <p class="name-icon">jefferson*</p> -->
+                 <img class="name-icon" src="../img/header/jefferson_icon.svg" alt="logo text jefferson">
+            </div>
+        </a>
+
+        <nav class="menu-box">
+            <button class="menu-link" type="button" aria-label="Menu button">Menu</button>
+
+            <div class="drop-down">
+                <ul class="menu-list visually-hidden">
+                    <li class="menu-list-item">
+                        <a href="#about-me" class="list-item-link">About me</a>
+                    </li>
+                    <li class="menu-list-item">
+                        <a href="#benefits" class="list-item-link">Benefits</a>
+                    </li>
+                    <li class="menu-list-item">
+                        <a href="#projects" class="list-item-link">Projects</a>
+                    </li>
+                    <li class="menu-list-item">
+                        <a href="#faq-section" class="list-item-link">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="order-btn-box">
+            <a class="order-btn" href="#work-together">Order the project</a>
+        </div>
+
+        <div class="burger-btn-box">
+            <button class="burger-btn" type="button" aria-label="Mobile menu button">
+                <svg class="burger-icon" width="28" height="28">
+                    <use href="/assets/svg/icons.svg#icon-menu-burger"></use>
+                </svg>
+            </button>
+        </div>
+
+
+    </div>
+
+    <!-- Burger  -->
+
+    <div class="burger-backdrop">
+        <div class="burger-menu">
+            <button class="close-btn" type="button" aria-label="Close button">
+                <svg class="close-icon" width="28" height="28">
+                    <use href="/assets/svg/icons.svg#icon-x"></use>
+                </svg>
+            </button>
+            <ul class="burger-menu-list">
+                <li class="burger-menu-list-item">
+                    <a href="#about-me" class="burger-list-item-link">About me</a>
+                </li>
+                <li class="menu-list-item">
+                    <a href="#benefits" class="burger-list-item-link">Benefits</a>
+                </li>
+                <li class="menu-list-item">
+                    <a href="#projects" class="burger-list-item-link">Projects</a>
+                </li>
+                <li class="menu-list-item">
+                    <a href="#faq-section" class="burger-list-item-link">FAQ</a>
+                </li>
+            </ul>
+            <div class="burger-order-btn-box">
+                <a class="burger-order-btn" href="#work-together">Order the project</a>
+            </div>
+        </div>
+    </div>
+
+</header>
     <main>
-      
+      <section class="hero hero-wrapper">
+    <div class="container">
+        <h1 class="hero-title header-1" data-aos="fade-right">
+            Hello. <br>
+            I’m Fullstack developer Lloyd Jefferson.
+        </h1>
+        <div class="hero-info small-text" data-aos="fade-left">
+            <ul class="hero-list">
+                <li class="hero-item">
+                    <a href="https://www.instagram.com/goitclub/" class="social-link" title="Link to Instagram"
+                        target="_blank" rel="noopener noreferrer">IG</a>
+                </li>
+                <li class="hero-item">
+                    <a href="https://www.facebook.com/goITclub/" class="social-link" title="Link to Facebook"
+                        target="_blank" rel="noopener noreferrer">FB</a>
+                </li>
+                <li class="hero-item">
+                    <a href="https://www.youtube.com/c/GoIT" class="social-link" title="Link to YouTube" target="_blank"
+                        rel="noopener noreferrer">YT</a>
+                </li>
+                <li class="hero-item">
+                    <a href="https://github.com/gudzsv/project-syntax-samurais-02" class="social-link"
+                        title="Link to GitHub" target="_blank" rel="noopener noreferrer">GH</a>
+                </li>
+            </ul>
+            <div class="heder-contact-info">
+                <a href="mailto:user@example.com?subject=Subject%20of%20email&amp;body=Message%20text&amp;cc=ccuser@example.com&amp;bcc=bccuser@example.com"
+                    class="heder-contact-info-link" title="Send an email"
+                    rel="noopener noreferrer">lloydjefferson@gmail.com</a>
+            </div>
+        </div>
+    </div>
+</section>
+
       <section class="about-me" id="about-me">
   <div class="about-box container">
     <h2 class="hidden">About me</h2>
@@ -297,6 +411,7 @@
 </section>
       
     </main>
+
       <footer>
         
       </footer>
@@ -305,5 +420,9 @@
           <use href="/goit_portfolio/assets/icons-CSsx8ybT.svg#arrow-down"></use>
         </svg>
       </button>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
   </body>
 </html>
