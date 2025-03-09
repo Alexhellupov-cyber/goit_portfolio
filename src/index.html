@@ -12,12 +12,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500..600&display=swap" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="./css/style.css"/>
     <title>Portfolio</title>
   </head>
   <body>
-    <load src="./partials/header.html">
-    <load src="./partials/header-menu.html">
+    <load src="./partials/header.html" />
     <main>
       <load src="./partials/hero.html" />
       <load src="./partials/about-me.html" />
@@ -36,7 +36,10 @@
         <use href="./img/icons.svg#arrow-down"></use>
       </svg>
     </button>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script type="module" src="./main.js"></script>
 
   </body>

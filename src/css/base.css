@@ -62,6 +62,7 @@ body {
   font-weight: 500;
   color: var(--white);
   background-color: var(--black);
+  margin: 0;
 }
 
 html {
