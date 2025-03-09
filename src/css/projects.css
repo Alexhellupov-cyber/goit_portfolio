@@ -1,0 +1,149 @@
+.projects {
+    max-width: 1440px;
+    padding-left: 32px;
+    border-radius: 24px;
+}
+.projects-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -.02em;
+    text-transform: uppercase;
+    color: #fafafa66;
+    margin-bottom: 32px;
+}
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 32px;
+}
+.projects-item {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 625px;
+    border-radius: 24px;
+}
+.projects-description {
+    width: 50%;
+    background-color: #ffffff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 24px 0 0 24px;
+}
+.technologies-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 6px;
+}
+.technologies-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    border: 1px solid rgba(28, 29, 32, 0.2);
+    border-radius: 60px;
+    padding: 18px;
+    width: 80px;
+    height: 55px;
+    color: var(--black);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+}
+.description-title {
+    font-family: 'Inter Tight';
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 44px; 
+    letter-spacing: -0.03em;
+    color: var(--black);
+    width: 494px;
+    height: 132px;
+    margin-top: 223px;
+}
+.project-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 177px;
+    height: 55px;
+    text-decoration: none;
+    background-color: var(--red);
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    transition: background-color 0.3s;
+}
+
+.project-link:hover {
+    background-color: #e0373f;;
+}
+.projects-img {
+    max-width: 50%;
+    background-color: var( --dark-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 24px 24px 0;
+    width: 688px;
+    height: 625px;
+}
+
+.projects-img img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.projects-slider {
+    width: 100%;
+  height: 100%;
+
+}
+.swiper-wrapper {
+    display: flex;
+  }
+  .swiper-slide {
+    width: 100%; /* Можна встановити конкретну ширину для кожного слайду */
+  height: 100%;
+  }
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  z-index: 10;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+/* Пагінація */
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
