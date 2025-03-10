@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'Inter Tight';
+    src: url('../fonts/InterTight-Medium.ttf') format('ttf');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter Tight';
+    src: url('../fonts/InterTight-SemiBold.ttf') format('ttf');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
 .hero {
     background-repeat: no-repeat;
     background-size: cover;
@@ -55,7 +71,7 @@
     .hero-title {
         text-align: start;
         margin: 268px auto 243px;
-        max-width: 1084px;
+        width: 1140px;
     }
 }
 
@@ -147,4 +163,29 @@
 
 .small-text {
     font-size: 14px;
+}
+
+
+/* Mobile */
+.container-hero {
+    min-width: 320px;
+    max-width: 375px;
+    width: 100%;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .container-hero {
+        max-width: 768px;
+        padding: 0 32px;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1440px) {
+    .container-hero {
+        max-width: 1440px;
+    }
 }

@@ -1,3 +1,43 @@
+@font-face {
+    font-family: 'Inter Tight';
+    src: url('../fonts/InterTight-Medium.ttf') format('ttf');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter Tight';
+    src: url('../fonts/InterTight-SemiBold.ttf') format('ttf');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Mobile */
+.container-head {
+    min-width: 320px;
+    max-width: 375px;
+    width: 100%;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .container-head {
+        max-width: 768px;
+        padding: 0 32px;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1440px) {
+    .container-head {
+        max-width: 1440px;
+    }
+}
+
 .header-container {
     position: absolute;
     left: 50%;
@@ -212,7 +252,7 @@
 
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('@assets/img/hero/hero_red_mobile_1x.webp');
+    background-image: url('../img/header/modalbackground.jpg');
 
     @media (min-resolution: 2dppx) {
         background-image: url('@assets/img/hero/hero_red_mobile_2x.webp');
@@ -227,6 +267,9 @@
 
 .close-btn {
     position: absolute;
+    padding: 0;
+    margin: 0;
+    border: 0;
     top: 39px;
     right: 23px;
     width: 28px;
@@ -249,7 +292,7 @@
 
 .burger-list-item-link {
     color: rgb(250, 250, 250);
-    font-family: 'Inter Tight';
+    font-family: 'Inter Tight', sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.19;
