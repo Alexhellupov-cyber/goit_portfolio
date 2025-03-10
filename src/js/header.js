@@ -6,12 +6,16 @@ const closeBtn = document.querySelector('.close-btn');
 const orderBtn = document.querySelector('.burger-order-btn');
 const burgerMenuList = document.querySelector('.burger-menu-list');
 
+const mediaQuery = window.matchMedia('(min-width: 769px)');
+
 menuBtn.addEventListener('click', handleMenuClick);
 burgerBtn.addEventListener('click', handleBurgerClick);
 closeBtn.addEventListener('click', handleCloseClick);
 menuList.addEventListener('click', handleMenuClick);
 orderBtn.addEventListener('click', handleCloseClick);
 burgerMenuList.addEventListener('click', handleCloseClick);
+
+mediaQuery.addEventListener('change', checkScreenSize);
 
 document.body.addEventListener('click', event => {
     if (!menuList.classList.contains('visually-hidden') && !event.target.classList.contains('menu-link')) {
@@ -116,3 +120,10 @@ function handleCloseClick() {
     }, 500);
     document.body.style.overflow = '';
 }
+
+function checkScreenSize (e) {
+    handleCloseClick();
+}
+
+checkScreenSize(mediaQuery);
+

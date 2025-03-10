@@ -18,36 +18,42 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: overlay;
-    background-image: url('../img/hero/hero-bg-mob-1x.png');
+    background-image: url('../img/hero/hero_red_mob.jpg');
 }
 
 @media (min-resolution: 2dppx) {
     .hero {
-        background-image: url('./img/hero/hero-bg-mob-1x.png');
+        background-image: url('../img/hero/hero_red_mob_2x.jpg');
     }
 }
 
 @media only screen and (min-width: 768px) {
     .hero {
-        background-image: url('../img/hero/hero-bg-tab-2x.png');
+        background-image: url('../img/hero/hero_red_tab.jpg');
     }
 }
 
 @media only screen and (min-width: 768px) and (min-resolution: 2dppx) {
     .hero {
-        background-image: url('../img/hero/hero-bg-tab-2x.png');
+        background-image: url('../img/hero/hero_red_tab_2x.jpg');
     }
 }
 
 @media only screen and (min-width: 1440px) {
     .hero {
-        background-image: url('../img/hero/hero-bg-desc-2x.png');
+        background-image: url('../img/hero/hero_red.jpg');
     }
 }
 
 @media only screen and (min-width: 1440px) and (min-resolution: 2dppx) {
     .hero {
-        background-image: url('../img/hero/hero-bg-desc-2x.png');
+        background-image: url('../img/hero/hero_red_2x.jpg');
+    }
+}
+
+@media only screen and (min-width: 2048px) {
+    .hero {
+        background-image: url('../img/hero/hero_red_3x.jpg');
     }
 }
 
@@ -122,8 +128,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 34px;
-    min-height: 34px;
+    min-width: 28px;
+    min-height: 28px;
+}
+
+@media only screen and (min-width: 375px) {
+    .social-link {
+        min-width: 34px;
+        min-height: 34px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -148,10 +161,17 @@
 .heder-contact-info-link {
     font-family: Inter Tight, sans-serif;
     display: flex;
-    min-width: 178px;
-    min-height: 34px;
+    min-width: 168px;
+    min-height: 28px;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen and (min-width: 375px) {
+    .heder-contact-info-link {
+        min-width: 178px;
+        min-height: 34px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -162,7 +182,13 @@
 }
 
 .small-text {
-    font-size: 14px;
+    font-size: 12px;
+}
+
+@media only screen and (min-width: 375px) {
+    .small-text {
+        font-size: 14px;
+    }
 }
 
 
