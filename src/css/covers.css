@@ -1,0 +1,81 @@
+.covers-section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(/img/covers/vectors@1x.png);
+}
+
+.covers-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  max-height: 508px;
+}
+
+.covers-list {
+  transform: rotate(17deg);
+  display: flex;
+  column-gap: 40px;
+  margin-bottom: 40px;
+}
+
+.covers-list-item {
+  width: 283px;
+  height: 163px;
+  animation-name: inViewport;
+  /* animation-timing-function: ease-in-out; */
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.cover-photo {
+  object-fit: cover;
+}
+
+@keyframes inViewport {
+  0% {
+    transform: translateX(50%);
+  }
+
+  50% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(50%);
+  }
+}
+
+/* MEDIA */
+@media screen and (min-width: 768px) {
+  .covers-container {
+    max-height: 960px;
+  }
+
+  .covers-list-item {
+    width: 544px;
+    height: 314px;
+  }
+
+  .cover-photo {
+    width: 544px;
+    height: 314px;
+  }
+
+  .covers-list {
+    column-gap: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+@media /* Retina ONLY*/ only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .covers-section {
+    background-image: url(/img/covers/vectors@2x.png);
+  }
+}
