@@ -1,3 +1,15 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Inter Tight';
+  src: url('../../fonts/InterTight-Medium/InterTight-Semibold.ttf');
+  font-style: normal;
+  font-weight: 500;
+}
 /* RESET STYLES*/
 h1,
 h2,
