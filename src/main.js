@@ -1,10 +1,31 @@
-import './js/covers.js';
-import './js/reviews.js';
-import './js/benefits.js'
-import './js/faq.js'
-import './js/header.js'
-import './js/hero.js'
-import './js/projects.js'
-import './js/work-together.js'
-import './js/about-me.js'
-import './js/about-me-2.js'
+import './js/header';
+import './js/hero';
+import './js/about-me';
+import './js/about-me-2';
+import './js/benefits';
+import './js/projects';
+import './js/faq';
+import './js/covers';
+import './js/reviews';
+import './js/work-together';
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const scrollUpButton = document.getElementById('scrollUp');
+  const scrollThreshold = 300;
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > scrollThreshold) {
+      scrollUpButton.classList.remove('hidden');
+    } else {
+      scrollUpButton.classList.add('hidden');
+    }
+  });
+
+  scrollUpButton.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  });
+});
