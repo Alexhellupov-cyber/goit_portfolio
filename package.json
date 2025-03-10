@@ -21,7 +21,7 @@
     "aos": "^2.3.4",
     "axios": "^1.7.9",
     "izitoast": "^1.4.0",
-    "swiper": "^11.1.15",
+    "swiper": "^11.2.5",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
   }
