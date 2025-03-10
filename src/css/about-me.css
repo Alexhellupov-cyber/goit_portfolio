@@ -89,6 +89,8 @@
 
 .accordion-info-about-me-list {
   display: flex;
+  justify-content: center;
+  margin: 0 auto;
   flex-direction: column;
   margin-bottom: 32px;
 }
