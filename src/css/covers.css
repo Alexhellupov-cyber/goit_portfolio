@@ -24,7 +24,6 @@
   width: 283px;
   height: 163px;
   animation-name: inViewport;
-  /* animation-timing-function: ease-in-out; */
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
