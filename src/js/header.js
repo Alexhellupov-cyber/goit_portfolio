@@ -121,9 +121,8 @@ function handleCloseClick() {
     document.body.style.overflow = '';
 }
 
-function checkScreenSize (e) {
+function checkScreenSize(e) {
     handleCloseClick();
 }
 
 checkScreenSize(mediaQuery);
-
