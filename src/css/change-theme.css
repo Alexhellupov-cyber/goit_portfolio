@@ -2,47 +2,81 @@
 
 .theme-buttons {
     position: absolute;
-    bottom: 120px;
-    right: 40px;
-}
-
-
-.theme-buttons {
+    bottom: 80px;
+    left: 50%;
+    transform: translate(-50%);
     display: flex;
     gap: 10px;
+    /* background: linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0));
+        box-shadow: -40px 0 80px rgba(0, 0, 0, 0.7), -20px 0 40px rgba(0, 0, 0, 0.5);
+        filter: blur(10px); */
+}
+
+.theme-buttons::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2));
+    box-shadow: -50px 0 100px rgba(0, 0, 0, 0.8), -30px 0 60px rgba(0, 0, 0, 0.5);
+    filter: blur(15px);
+    /* Розмиття тільки на фон */
+    border-radius: 15px;
+    z-index: -1;
+    /* Розташування під кнопками */
 }
 
 .theme-buttons button {
+    position: relative;
     padding: 0;
     margin: 0;
     border: none;
-    width: 30px;
-    height: 30px;
+    width: 26px;
+    height: 26px;
     border-radius: 50%;
     transition: scale 0.5s ease-in-out;
 }
 
-.btn-theme-red{
+@media screen and (min-width: 768px) {
+    .theme-buttons {
+        bottom: 14px;
+        left: 32px;
+        transform: translate(0);
+    }
+
+    .theme-buttons button {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.btn-theme-red {
     background-color: rgb(237, 59, 68);
 }
 
 .btn-theme-green {
     background-color: #C6E327;
 }
+
 .btn-theme-blue {
     background-color: #0041E8;
 }
+
 .btn-theme-orange {
     background-color: #E6533C;
 }
+
 .btn-theme-dark-green {
     background-color: #2B4441;
 }
+
 .btn-theme-yellow {
     background-color: #FF7F08;
 }
 
-.active-btn-change{
+.active-btn-change {
     scale: 1.2;
     transition: scale 0.5s ease-in-out;
 }
@@ -299,7 +333,7 @@
 
 .theme-red:hover[data-theme-btn] {
     background-color: rgb(224, 55, 63);
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
 }
 
 .theme-red:focus[data-theme-btn] {
@@ -545,4 +579,36 @@
 .swiper-slide-active.theme-yellow[data-theme-swiper-active] {
     background-color: #FF7F08;
     transition: background-color 0.5s ease-in-out;
+}
+
+/* Change color border Up Btn */
+
+.theme-red[data-theme-btn-up] {
+    border-color: rgb(237, 59, 68);
+    transition: border-color 0.5s ease-in-out;
+}
+
+.theme-green[data-theme-btn-up] {
+    border-color: #C6E327;
+    transition: border-color 0.5s ease-in-out;
+}
+
+.theme-blue[data-theme-btn-up] {
+    border-color: #0041E8;
+    transition: border-color 0.5s ease-in-out;
+}
+
+.theme-orange[data-theme-btn-up] {
+    border-color: #E6533C;
+    transition: border-color 0.5s ease-in-out;
+}
+
+.theme-dark-green[data-theme-btn-up] {
+    border-color: #2B4441;
+    transition: border-color 0.5s ease-in-out;
+}
+
+.theme-yellow[data-theme-btn-up] {
+    border-color: #FF7F08;
+    transition: border-color 0.5s ease-in-out;
 }

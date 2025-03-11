@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeTextsSpan = document.querySelectorAll('[data-theme-text-span]');
     const themeSvgFill = document.querySelectorAll('[data-theme-text-svg]');
     const themeSwiperBg = document.querySelectorAll('[data-theme-swiper-active]');
+    const themeBgUpBtn = document.querySelectorAll('[data-theme-btn-up]');
     const themeRedBtn = document.querySelector('[data-theme-red]');
     const themeGreenBtn = document.querySelector('[data-theme-green]');
     const themeBlueBtn = document.querySelector('[data-theme-blue]');
@@ -24,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         themeTextsSpan.forEach(text => text.classList.remove('theme-red', 'theme-green', 'theme-blue', 'theme-orange', 'theme-dark-green', 'theme-yellow'));
         themeSvgFill.forEach(text => text.classList.remove('theme-red', 'theme-green', 'theme-blue', 'theme-orange', 'theme-dark-green', 'theme-yellow'));
         themeSwiperBg.forEach(text => text.classList.remove('theme-red', 'theme-green', 'theme-blue', 'theme-orange', 'theme-dark-green', 'theme-yellow'));
+        themeBgUpBtn.forEach(text => text.classList.remove('theme-red', 'theme-green', 'theme-blue', 'theme-orange', 'theme-dark-green', 'theme-yellow'));
 
         hero.classList.add(theme);
         burgMenu.classList.add(theme);
@@ -32,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         themeTextsSpan.forEach(text => text.classList.add(theme));
         themeSvgFill.forEach(text => text.classList.add(theme));
         themeSwiperBg.forEach(text => text.classList.add(theme));
+        themeBgUpBtn.forEach(text => text.classList.add(theme));
 
         themeRedBtn.classList.toggle('active-btn-change', theme === 'theme-red');
         themeGreenBtn.classList.toggle('active-btn-change', theme === 'theme-green');
@@ -52,6 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 AOS.init({
+    offset: 0,
     duration: 1300,
     once: false,
     mirror: true,
