@@ -69,11 +69,12 @@
   color: white;
   background: #ed3b44;
   margin-bottom: 64px;
+  transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
-.footer-send-btn:hover {
+/* .footer-send-btn:hover {
   background: #e0373f;
-}
+} */
 
 .footer-contact-info {
   display: flex;

@@ -25,7 +25,8 @@
       </picture>
 
       LET’S
-      <span data-theme-text class="footer-title-span"> WORK </span> TOGETHER
+      <span data-theme-text-span class="footer-title-span"> WORK </span>
+      TOGETHER
     </h2>
 
     <div class="footer-form-container">
@@ -33,6 +34,7 @@
         <input
           type="email"
           id="email"
+          name="email"
           class="footer-input"
           placeholder="clients@gmail.com"
           required
@@ -42,12 +44,14 @@
         <input
           id="comments"
           class="footer-input"
+          name="comments"
           placeholder="comments"
           required
         />
+        <button data-theme-btn type="submit" class="footer-send-btn">
+          Send
+        </button>
       </form>
-
-      <button data-theme-btn type="submit" class="footer-send-btn">Send</button>
     </div>
 
     <address class="footer-contact-info">
