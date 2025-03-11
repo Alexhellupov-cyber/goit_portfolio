@@ -18,23 +18,15 @@
   <script type="module" crossorigin src="/goit_portfolio/index.js"></script>
   <link rel="modulepreload" crossorigin href="/goit_portfolio/assets/vendor-B5x9Wzbm.js">
   <link rel="stylesheet" crossorigin href="/goit_portfolio/assets/vendor-igLX0lV3.css">
-  <link rel="stylesheet" crossorigin href="/goit_portfolio/assets/index-D1Px8eBn.css">
+  <link rel="stylesheet" crossorigin href="/goit_portfolio/assets/index-r6iatyE8.css">
 </head>
 
 <body>
   <header class="header">
     <div class="container-head header-container">
         <a href="./index.html" class="header-img-box">
-
-            <!-- <picture>
-                <img class="header-image" srcset="
-            ../img/header/logo.webp 1x,
-            ../img/header/logo_2x.webp 2x
-          " src="../img/header/logo.webp" alt="logo" width="80" height="80" loading="lazy" title="logo">
-            </picture> -->
             <picture>
-                <img class="header-image" src="/goit_portfolio/assets/logo-DAjlSAoT.png" alt="logo" width="80" height="80" loading="lazy"
-                    title="logo">
+                <img class="header-image" srcset="/goit_portfolio/assets/logo-2x-B-ZQtDjK.png 1x, /goit_portfolio/assets/logo-3x-DUCuNBQ4.png 2x" src="/goit_portfolio/assets/logo-DAjlSAoT.png" alt="logo" width="80" height="80" loading="lazy" title="logo">
             </picture>
             <div>
                 <svg class="name-icon">
@@ -390,7 +382,7 @@
                         </ul>
                     </div>
                     <h3 class="description-title">Programming Across Borders: Ideas, Technologies, Innovations</h3>
-                    <a href="https://github.com/Alexhellupov-cyber/goit_portfolio" target="_blank" rel="noopener noreferrer" class="project-link">
+                    <a data-theme-btn href="https://github.com/Alexhellupov-cyber/goit_portfolio" target="_blank" rel="noopener noreferrer" class="project-link">
                         See project
                     </a>
                 </div>
@@ -778,11 +770,29 @@
 </div>
 
   </footer>
-  <button id="scrollUp" class="hidden">
+  <!-- <button id="scrollUp" class="hidden">
     <svg class="scroll-up" width="20" height="20">
-      <use href="/goit_portfolio/assets/icons-CSsx8ybT.svg#arrow-down"></use>
+      <use href="./img/icons.svg#arrow-down"></use>
     </svg>
-  </button>
+  </button> -->
+  <!-- <button class="btn-arrow-read-more ac-trigger">
+  <svg class="svg-arrow-read-more" width="20" height="20">
+    <use href="../img/header/icons.svg#icon-keyboard_arrow_down"></use>
+  </svg>
+</button> -->
+
+<a data-theme-btn-up class="up-btn" href="#home">
+  <svg class="up-btn-svg" width="30" height="30">
+    <!-- <use href="./img/icons.svg#arrow-up"></use> -->
+    <use href="/goit_portfolio/assets/sprite-CGnIFLbc.svg#arrow-white"></use>
+  </svg>
+</a>
+
+<!-- <button id="scrollUp" class="hidden">
+    <svg class="scroll-up" width="20" height="20">
+      <use href="./img/icons.svg#arrow-down"></use>
+    </svg>
+  </button> -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
