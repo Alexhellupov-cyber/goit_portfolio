@@ -333,7 +333,7 @@
 
 .theme-red:hover[data-theme-btn] {
     background-color: rgb(224, 55, 63);
-    /* transform: scale(1.05); */
+    transform: scale(1.05);
 }
 
 .theme-red:focus[data-theme-btn] {
