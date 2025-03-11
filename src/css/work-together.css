@@ -220,6 +220,11 @@
     padding: 18px 32px;
     height: 55px;
     font-size: 16px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .footer-contact:hover,
+  .footer-contact:focus {
+    border-color: #fafafa;
   }
   .modal {
     width: 492px;
