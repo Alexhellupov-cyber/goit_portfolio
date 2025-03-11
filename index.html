@@ -18,7 +18,7 @@
   <script type="module" crossorigin src="/goit_portfolio/index.js"></script>
   <link rel="modulepreload" crossorigin href="/goit_portfolio/assets/vendor-B5x9Wzbm.js">
   <link rel="stylesheet" crossorigin href="/goit_portfolio/assets/vendor-igLX0lV3.css">
-  <link rel="stylesheet" crossorigin href="/goit_portfolio/assets/index-Df9ZeLEK.css">
+  <link rel="stylesheet" crossorigin href="/goit_portfolio/assets/index-CF4Ium7W.css">
 </head>
 
 <body>
@@ -40,27 +40,25 @@
                 <svg class="name-icon">
                     <use href="/goit_portfolio/assets/icons-CSsx8ybT.svg#icon-jefferson"></use>
                 </svg>
-                <!-- <p class="name-icon">jefferson*</p> -->
-                <!-- <img class="name-icon" src="../img/header/jefferson_icon.svg" alt="logo text jefferson"> -->
             </div>
         </a>
 
         <nav class="menu-box">
-            <button class="menu-link" type="button" aria-label="Menu button">Menu</button>
+            <button data-theme-text class="menu-link" type="button" aria-label="Menu button">Menu</button>
 
             <div class="drop-down">
                 <ul class="menu-list visually-hidden">
                     <li class="menu-list-item">
-                        <a href="#about-me" class="list-item-link">About me</a>
+                        <a data-theme-text href="#about-me" class="list-item-link">About me</a>
                     </li>
                     <li class="menu-list-item">
-                        <a href="#benefits" class="list-item-link">Benefits</a>
+                        <a data-theme-text href="#benefits" class="list-item-link">Benefits</a>
                     </li>
                     <li class="menu-list-item">
-                        <a href="#projects" class="list-item-link">Projects</a>
+                        <a data-theme-text href="#projects" class="list-item-link">Projects</a>
                     </li>
                     <li class="menu-list-item">
-                        <a href="#faq-section" class="list-item-link">FAQ</a>
+                        <a data-theme-text href="#faq-section" class="list-item-link">FAQ</a>
                     </li>
                 </ul>
             </div>
@@ -145,13 +143,13 @@
         </div>
 
         <!-- Button change theme -->
-        <div>
-            <button data-theme-red>Red Theme</button>
-            <button data-theme-green>Green Theme</button>
-            <button data-theme-blue>Blue Theme</button>
-            <button data-theme-orange>Orange Theme</button>
-            <button data-theme_dark-green>Dark Green Theme</button>
-            <button data-theme-yellow>Yellow Theme</button>
+        <div class="theme-buttons">
+            <button data-theme-red class="btn-theme-red"></button>
+            <button data-theme-green class="btn-theme-green"></button>
+            <button data-theme-blue class="btn-theme-blue"></button>
+            <button data-theme-orange class="btn-theme-orange"></button>
+            <button data-theme-dark-green class="btn-theme-dark-green"></button>
+            <button data-theme-yellow class="btn-theme-yellow"></button>
         </div>
 
     </div>
@@ -163,7 +161,7 @@
       <div class="about-subtitle-content">
         <h3 class="about-subtitle-text">
           I work with people all over the world to create impressive and
-          <span class="subtitle-func">functional</span>
+          <span data-theme-text-span class="subtitle-func">functional</span>
           <span class="subtitle-web-grey">websites</span> that reflect each
           client's unique personality.
         </h3>
@@ -308,13 +306,13 @@
   <div class="skills-container">
     <div class="skills swiper">
       <ul class="skill-list swiper-wrapper">
-        <li class="skill-item swiper-slide skill-item-circle">HTML/CSS</li>
-        <li class="skill-item swiper-slide skill-item-circle">JavaScript</li>
-        <li class="skill-item swiper-slide skill-item-circle">TypeScript</li>
-        <li class="skill-item swiper-slide skill-item-circle">React</li>
-        <li class="skill-item swiper-slide skill-item-circle">Node.js</li>
-        <li class="skill-item swiper-slide skill-item-circle">React Native</li>
-        <li class="skill-item swiper-slide skill-item-circle">Soft skills</li>
+        <li data-theme-swiper-active class="skill-item swiper-slide skill-item-circle">HTML/CSS</li>
+        <li data-theme-swiper-active class="skill-item swiper-slide skill-item-circle">JavaScript</li>
+        <li data-theme-swiper-active class="skill-item swiper-slide skill-item-circle">TypeScript</li>
+        <li data-theme-swiper-active class="skill-item swiper-slide skill-item-circle">React</li>
+        <li data-theme-swiper-active class="skill-item swiper-slide skill-item-circle">Node.js</li>
+        <li data-theme-swiper-active class="skill-item swiper-slide skill-item-circle">React Native</li>
+        <li data-theme-swiper-active class="skill-item swiper-slide skill-item-circle">Soft skills</li>
       </ul>
     </div>
     <svg class="btn-next">
@@ -329,7 +327,7 @@
       <div class="container-benefits">
         <ul class="benefits-ul">
           <li class="card">
-            <svg class="benefits-icons" width="24" height="24">
+            <svg data-theme-text-svg class="benefits-icons" width="24" height="24">
               <use href="/goit_portfolio/assets/icons-CSsx8ybT.svg#icon-user-01"></use>
             </svg>
             <div class="text-container">
@@ -341,7 +339,7 @@
             </div>
           </li>
           <li class="card">
-            <svg class="benefits-icons" width="24" height="24">
+            <svg data-theme-text-svg class="benefits-icons" width="24" height="24">
               <use href="/goit_portfolio/assets/icons-CSsx8ybT.svg#icon-Icon"></use>
             </svg>
             <h3 class="benefits-card">Communication</h3>
@@ -351,7 +349,7 @@
             </p>
           </li>
           <li class="card">
-            <svg class="benefits-icons" width="24" height="24">
+            <svg data-theme-text-svg class="benefits-icons" width="24" height="24">
               <use href="/goit_portfolio/assets/icons-CSsx8ybT.svg#icon-brush-01"></use>
             </svg>
             <h3 class="benefits-card">Art</h3>
@@ -361,7 +359,7 @@
             </p>
           </li>
           <li class="card">
-            <svg class="benefits-icons" width="24" height="24">
+            <svg data-theme-text-svg class="benefits-icons" width="24" height="24">
               <use href="/goit_portfolio/assets/icons-CSsx8ybT.svg#icon-hourglass-02"></use>
             </svg>
             <h3 class="benefits-card">Urgent execution</h3>
@@ -371,7 +369,7 @@
             </p>
           </li>
         </ul>
-        <a href="#work-together" class="button-benefits">Order the project</a>
+        <a data-theme-btn href="#work-together" class="button-benefits">Order the project</a>
       </div>
     </div>
   </section>
