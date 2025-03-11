@@ -89,14 +89,6 @@
     scale: 1.15;
 }
 
-/* .name-icon:hover {
-    scale: 1.15;
-}
-
-.name-icon:focus {
-    scale: 1.15;
-} */
-
 .menu-box {
     display: none;
 }
@@ -127,18 +119,6 @@
     padding: 0;
 }
 
-.menu-link:hover {
-    color: rgb(237, 59, 68);
-}
-
-.menu-link:focus {
-    color: rgb(237, 59, 68);
-}
-
-.menu-link:active {
-    color: rgb(237, 59, 68);
-}
-
 .drop-down {
     margin-top: 8px;
     overflow: hidden;
@@ -161,18 +141,6 @@
     line-height: 1.19;
     letter-spacing: -0.02em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.list-item-link:hover {
-    color: rgb(237, 59, 68);
-}
-
-.list-item-link:focus {
-    color: rgb(237, 59, 68);
-}
-
-.list-item-link:active {
-    color: rgb(237, 59, 68);
 }
 
 .order-btn {
@@ -252,12 +220,6 @@
 
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-image: url('../img/hero/burg-menu_red.jpg'); */
-
-    /* @media (min-resolution: 2dppx) {
-        background-image: url('../img/hero/burg-menu_red_2x.jpg');
-        background-size: cover;
-    } */
 }
 
 .burger-menu.is-open {
@@ -300,18 +262,6 @@
     text-decoration: underline;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/* .burger-list-item-link:hover {
-    color: rgb(237, 59, 68);
-} */
-
-/* .burger-list-item-link:focus {
-    color: rgb(237, 59, 68);
-} */
-
-/* .burger-list-item-link:active {
-    color: rgb(237, 59, 68);
-} */
 
 .burger-order-btn-box {
     margin-bottom: 64px;

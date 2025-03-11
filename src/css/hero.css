@@ -14,51 +14,6 @@
     font-display: swap;
 }
 
-/* .hero {
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-blend-mode: overlay;
-    background-position: center;
-    transition: background 0.5s ease-in-out;
-    background-image: url('../img/hero/hero_red_mob.jpg');
-} */
-
-/* @media (min-resolution: 2dppx) {
-    .hero {
-        background-image: url('../img/hero/hero_red_mob_2x.jpg');
-    }
-} */
-
-/* @media only screen and (min-width: 768px) {
-    .hero {
-        background-image: url('../img/hero/hero_red_tab.jpg');
-    }
-} */
-
-/* @media only screen and (min-width: 768px) and (min-resolution: 2dppx) {
-    .hero {
-        background-image: url('../img/hero/hero_red_tab_2x.jpg');
-    }
-} */
-
-/* @media only screen and (min-width: 1440px) {
-    .hero {
-        background-image: url('../img/hero/hero_red.jpg');
-    }
-} */
-
-/* @media only screen and (min-width: 1440px) and (min-resolution: 2dppx) {
-    .hero {
-        background-image: url('../img/hero/hero_red_2x.jpg');
-    }
-} */
-
-/* @media only screen and (min-width: 2048px) {
-    .hero {
-        background-image: url('../img/hero/hero_red_3x.jpg');
-    }
-} */
-
 .hero-wrapper {
     padding-block: 32px;
 }
@@ -196,6 +151,7 @@
 
 /* Mobile */
 .container-hero {
+    position: relative;
     min-width: 320px;
     max-width: 375px;
     width: 100%;
@@ -217,127 +173,3 @@
         max-width: 1440px;
     }
 }
-
-/*   Theme Default   */
-
-/* .default-theme #hero {
-    background-image: url('../img/hero/hero_red_mob.jpg');
-}
-
-.default-theme #special-button {
-    color: rgb(250, 250, 250);
-    background-color: rgb(237, 59, 68);
-}
-
-.default-theme #special-button:hover {
-    background-color: rgb(224, 55, 63);
-    transform: scale(1.05);
-}
-
-.default-theme #special-button:focus {
-    background-color: rgb(224, 55, 63);
-} */
-
-/* .default-theme #text {
-    color: #333;
-}
-
-.default-theme .card:hover {
-    box-shadow: 0 0 15px #333;
-} */
-
-/* .theme-red.hero {
-    background-image: url('../img/hero/hero_red_mob.jpg');
-}
-
-.theme-green.hero {
-    background-image: url('../img/hero/hero_green_mob.jpg');
-}
-
-.theme-red [data-theme-btn] {
-    color: rgb(250, 250, 250);
-    background-color: rgb(237, 59, 68);
-}
-
-.theme-red:hover [data-theme-btn] {
-    background-color: rgb(224, 55, 63);
-        transform: scale(1.05);
-}
-
-.theme-red:focus [data-theme-btn] {
-    background-color: rgb(224, 55, 63);
-}
-
-.theme-green [data-theme-btn] {
-    color: rgb(250, 250, 250);
-    background-color: #2B4441;
-} */
-
-/* Плавна зміна фону */
-/* [data-theme-hero] {
-    background-size: cover;
-    background-position: center;
-    transition: background-image 0.5s ease-in-out;
-} */
-
-/* Фони */
-/* .theme-red[data-theme-hero] {
-    background-image: url('../img/hero/hero_red_mob.jpg');
-}
-
-.theme-green[data-theme-hero] {
-    background-image: url('../img/hero/hero_green_mob.jpg');
-} */
-
-/* Кнопки відповідної теми */
-/* .theme-red[data-theme-btn] {
-    color: rgb(250, 250, 250);
-    background-color: rgb(237, 59, 68);
-}
-
-.theme-red:hover[data-theme-btn] {
-    background-color: rgb(224, 55, 63);
-    transform: scale(1.05);
-}
-
-.theme-red:focus[data-theme-btn] {
-    background-color: rgb(224, 55, 63);
-}
-
-.theme-green[data-theme-btn] {
-    color: rgb(250, 250, 250);
-    background-color: #2B4441;
-}
-
-.theme-green:hover[data-theme-btn] {
-    background-color: #1f312e;
-    transform: scale(1.05);
-}
-
-.theme-green:focus[data-theme-btn] {
-    background-color: #1f312e;
-}
-
-.theme-red:hover[data-theme-text] {
-    color: rgb(237, 59, 68);
-}
-
-.theme-red:focus[data-theme-text] {
-    color: rgb(237, 59, 68);
-}
-
-.theme-red:active[data-theme-text] {
-    color: rgb(237, 59, 68);
-}
-
-.theme-green:hover[data-theme-text] {
-    color: #2B4441;
-}
-
-.theme-green:focus[data-theme-text] {
-    color: #2B4441;
-}
-
-.theme-green:active[data-theme-text] {
-    color: #2B4441;
-} */
