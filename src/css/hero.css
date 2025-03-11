@@ -16,11 +16,11 @@
 
 .hero {
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-blend-mode: overlay;
-    /* background-position: center; */
-    /* background-image: url('../img/hero/hero_red_mob.jpg'); */
     transition: background 0.5s ease-in-out;
+    background-position: center;
+    background-image: url('../img/hero/hero_red_mob.jpg');
 }
 
 @media (min-resolution: 2dppx) {
