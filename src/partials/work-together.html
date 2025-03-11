@@ -1,25 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Form</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="contact-section">
-      <h1>LET’S <span>WORK</span> TOGETHER</h1>
-      <div class="form-container">
-        <input type="email" placeholder="client@email.com" />
-        <input type="text" placeholder="comments" />
-      </div>
-      <div class="form-footer">
-        <div class="info">
-          <div>lloydjefferson@gmail.com</div>
-          <div>+380 11 111 1111</div>
-        </div>
-        <div class="send-btn">Send</div>
-      </div>
+<footer>
+  <div class="container footer">
+    <h2 class="footer-title">
+      <picture class="footer-image-wrapper">
+        <source
+          srcset="
+            /img/footer/work-together-mobile.png    1x,
+            /img/footer/work-together-mobile@2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="
+            /img/footer/work-together-desktop.png    1x,
+            /img/footer/work-together-desktop@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <img
+          src="/img/footer/work-together-desktop.png"
+          alt="Jefferson photo."
+          class="footer-image"
+          loading="lazy"
+        />
+      </picture>
+
+      LET’S
+      <span data-theme-text class="footer-title-span"> WORK </span> TOGETHER
+    </h2>
+
+    <div class="footer-form-container">
+      <form class="footer-form" id="contactForm">
+        <input
+          type="email"
+          id="email"
+          class="footer-input"
+          placeholder="clients@gmail.com"
+          required
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+        />
+
+        <input
+          id="comments"
+          class="footer-input"
+          placeholder="comments"
+          required
+        />
+      </form>
+
+      <button data-theme-btn type="submit" class="footer-send-btn">Send</button>
     </div>
-  </body>
-</html>
+
+    <address class="footer-contact-info">
+      <a href="mailto:lloydjefferson@gmail.com" class="footer-contact"
+        >lloydjefferson@gmail.com</a
+      >
+      <a href="tel:+380111111111" class="footer-contact">+380 111 111 1111</a>
+    </address>
+  </div>
+</footer>
+
+<div class="modal-overlay">
+  <div class="modal">
+    <button class="modal-close" aria-label="Close modal">&times;</button>
+    <div class="modal-content">
+      <h2 class="modal-title">Thank you for your interest in cooperation!</h2>
+      <p class="modal-description">
+        The manager will contact you shortly to discuss further details and
+        opportunities for cooperation. Please stay in touch.
+      </p>
+    </div>
+  </div>
+</div>
