@@ -119,6 +119,7 @@ function closeBackdrop() {
   if (!footerBackdrop) {
     return;
   }
+
   footerBackdrop.style.opacity = '0';
   footerBackdrop.style.pointerEvents = 'none';
   footerBackdrop.classList.remove('backdrop-is-open');
@@ -137,3 +138,5 @@ modalCloseBtn.addEventListener('click', closeBackdrop);
 footerBackdrop.addEventListener('click', event => {
   if (event.target === footerBackdrop) closeBackdrop();
 });
+document.addEventListener('keydown', onEscKeyPress);
+
