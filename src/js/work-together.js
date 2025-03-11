@@ -19,11 +19,6 @@ const modalWindowHeader = document.querySelector('.modal-title');
 const modalWindowText = document.querySelector('.modal-description');
 const modalCloseBtn = document.querySelector('.modal-close');
 
-// Збереження позиції прокрутки перед оновленням
-window.addEventListener('beforeunload', () => {
-  localStorage.setItem('scrollPosition', window.scrollY);
-});
-
 // Відновлення даних із localStorage
 const formNewState = JSON.parse(localStorage.getItem('savedUserInput')) || {};
 if (formNewState.email) footerEmailInput.value = formNewState.email;
@@ -113,6 +108,7 @@ function openBackdrop(title, message) {
   modalWindowHeader.textContent = title;
   modalWindowText.textContent = message;
   footerBackdrop.style.opacity = '1';
+  footerBackdrop.style.pointerEvents = 'auto';
   footerBackdrop.classList.add('backdrop-is-open');
   document.body.style.overflow = 'hidden';
   window.addEventListener('keydown', onEscKeyPress);
@@ -123,6 +119,8 @@ function closeBackdrop() {
   if (!footerBackdrop) {
     return;
   }
+  footerBackdrop.style.opacity = '0';
+  footerBackdrop.style.pointerEvents = 'none';
   footerBackdrop.classList.remove('backdrop-is-open');
   document.body.style.overflow = '';
   window.removeEventListener('keydown', onEscKeyPress);
@@ -139,5 +137,3 @@ modalCloseBtn.addEventListener('click', closeBackdrop);
 footerBackdrop.addEventListener('click', event => {
   if (event.target === footerBackdrop) closeBackdrop();
 });
-
-document.addEventListener('keydown', onEscKeyPress);
