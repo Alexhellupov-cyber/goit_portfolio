@@ -1,5 +1,5 @@
 import './js/header';
-import './js/hero'
+import './js/hero';
 import './js/about-me';
 import './js/about-me-2';
 import './js/benefits';
@@ -8,7 +8,6 @@ import './js/faq';
 import './js/covers';
 import './js/reviews';
 import './js/work-together';
-
 
 // document.addEventListener('DOMContentLoaded', () => {
 //   const scrollUpButton = document.getElementById('scrollUp');
@@ -37,7 +36,7 @@ function scrollingTopPage() {
     upButton.addEventListener('click', function () {
       window.scrollTo({
         top: 0,
-        behavior: 'smooth'
+        behavior: 'smooth',
       });
 
       document.body.classList.add('scrolling');
@@ -50,7 +49,10 @@ function scrollingTopPage() {
         upButton.classList.remove('show');
       }
 
-      if (document.body.classList.contains('scrolling') && window.scrollY === 0) {
+      if (
+        document.body.classList.contains('scrolling') &&
+        window.scrollY === 0
+      ) {
         document.body.classList.remove('scrolling');
       }
     });
