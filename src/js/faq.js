@@ -1,13 +1,24 @@
 import Accordion from 'accordion-js';
+import 'accordion-js/dist/accordion.min.css';
 
-new Accordion('.faq-list', {
-  duration: 400,
-  showOne: true,
-  showMultiple: true,
-  onToggle: function (event) {
-    const button = event.target.closest('.qwestions');
-    if (button) {
-      button.classList.toggle('is-active');
+document.addEventListener('DOMContentLoaded', function () {
+  new Accordion('.accordion-container', {
+    showMultiple: true,
+    duration: 300,
+  });
+});
+
+const buttonSvgFaq = document.querySelectorAll('.faq-button');
+const faqArrowIcon = document.querySelectorAll('.faq-arrow-icon')
+
+buttonSvgFaq.forEach((button, index) => {
+  button.addEventListener('click', function () {
+    const icon = faqArrowIcon[index]; 
+
+    if (icon.style.top === '10px') {
+      icon.style.top = ''; 
+    } else {
+      icon.style.top = '10px'; 
     }
-  },
+  });
 });
