@@ -4,12 +4,6 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: 'Inter Tight';
-  src: url('../../fonts/InterTight-Medium/InterTight-Semibold.ttf');
-  font-style: normal;
-  font-weight: 500;
-}
 /* RESET STYLES*/
 h1,
 h2,
@@ -57,7 +51,7 @@ img {
 }
 
 body {
-  font-family: 'Inter Tight';
+  font-family: 'Inter Tight', sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: var(--white);
@@ -73,7 +67,7 @@ html {
 }
 
 /* Mob Adaptive */
-@media screen and (min-width: 375px;) {
+@media screen and (min-width: 375px) {
   .container {
     width: 375px;
     margin: 0 auto;
@@ -81,17 +75,17 @@ html {
 }
 
 /* Tab Adaptive */
-@media screen and (min-width: 768px;) {
+@media screen and (min-width: 768px) {
   .container {
-    width: 768;
+    width: 768px;
     padding: 0 32px;
   }
 }
 
 /* Desc Adaptive */
-@media screen and (min-width: 1440px;) {
+@media screen and (min-width: 1440px) {
   .container {
-    width: 1440;
+    width: 1440px;
   }
 }
 

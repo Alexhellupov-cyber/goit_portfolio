@@ -1,4 +1,4 @@
-const coversList = document.querySelectorAll('li');
+const coversList = document.querySelectorAll('.covers-list-item');
 const observer = new IntersectionObserver(handleIntersection, {
   root: null,
   rootMargin: '-25% 0px -25% 0px',
