@@ -17,3 +17,7 @@
 @import url('./change-theme.css');
 @import url('./btn-arrow-read-more.css');
 
+html, body {
+    overflow-x: hidden;
+  }
+  

@@ -28,6 +28,7 @@
   margin-bottom: 32px;
 }
 
+
 .swiper-wrapper.proj-wrapper .swiper-slide {
   width: 100%;
   display: flex;
@@ -135,6 +136,7 @@
     margin-bottom: 64px;
   }
 
+
   .swiper-wrapper.proj-wrapper .swiper-slide {
     box-shadow: none;
   }
@@ -189,6 +191,7 @@
   .projects-container {
     max-width: 1440px;
   }
+
 
   .swiper-wrapper.proj-wrapper .swiper-slide {
     flex-direction: row;

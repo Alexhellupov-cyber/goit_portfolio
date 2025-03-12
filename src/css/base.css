@@ -71,6 +71,7 @@ html {
   .container {
     width: 375px;
     margin: 0 auto;
+    padding: 0 32px;
   }
 }
 
