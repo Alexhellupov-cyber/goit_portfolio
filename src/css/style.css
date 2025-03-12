@@ -4,7 +4,6 @@
 
 /**/
 @import url('./header.css');
-@import url('./header-menu.css');
 @import url('./hero.css');
 @import url('./about-me.css');
 @import url('./about-me-2.css');
@@ -15,5 +14,5 @@
 @import url('./reviews.css');
 @import url('./work-together.css');
 @import url('./change-theme.css');
-@import url('./btn-arrow-read-more.css');
+@import url('./btn-arrow-read-up.css');
 

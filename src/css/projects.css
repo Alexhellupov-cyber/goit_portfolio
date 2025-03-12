@@ -76,11 +76,8 @@
   font-size: 16px;
   letter-spacing: -0.02em;
   color: #fafafa;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.projects-link:hover {
-  background-color: #263c3b;
+  transition: background-color var(--timing-function),
+      transform var(--timing-function);
 }
 
 .projects-img-cont {

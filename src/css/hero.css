@@ -4,20 +4,25 @@
 
 .hero-title {
   text-align: start;
-  margin: 246px auto 227px;
+  padding-top: 249px;
+  margin-bottom: 212px;
 }
 
 @media only screen and (min-width: 768px) {
   .hero-title {
     text-align: start;
-    margin: 188px auto 187px;
+    padding-top: 220px;
+    margin-bottom: 187px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .hero-title {
     text-align: start;
-    margin: 268px auto 243px;
+    padding-top: 268px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 243px;
     width: 1140px;
   }
 }
@@ -25,6 +30,7 @@
 /* Mobile/H1 */
 .header-1 {
   font-size: 50px;
+  font-weight: 500;
   line-height: 1;
   letter-spacing: -0.03em;
   text-transform: uppercase;
