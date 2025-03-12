@@ -14,7 +14,7 @@
 }
 
 .covers-list {
-  transform: rotate(17deg);
+  transform: rotate(17deg) translateY(-30px);
   display: flex;
   column-gap: 40px;
   margin-bottom: 40px;
