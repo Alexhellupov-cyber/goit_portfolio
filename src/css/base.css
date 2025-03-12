@@ -3,10 +3,9 @@
 *::after {
   box-sizing: border-box;
 }
-
 @font-face {
   font-family: 'Inter Tight';
-  src: url('../../fonts/InterTight-Medium/InterTight-Semibold.ttf');
+  src: url('../fonts/InterTight-SemiBold.ttf') format('truetype');
   font-style: normal;
   font-weight: 500;
 }
