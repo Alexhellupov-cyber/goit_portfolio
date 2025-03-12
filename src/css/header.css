@@ -90,7 +90,7 @@
     display: flex;
     justify-content: center;
     background-color: transparent;
-    color: #fff;
+    color: var(--white);
     font-size: 16px;
     font-weight: 500;
     line-height: 1.19;
@@ -117,7 +117,7 @@
 }
 
 .list-item-link {
-    color: rgb(250, 250, 250);
+    color: var(--white);
     font-size: 16px;
     font-weight: 500;
     line-height: 1.19;
@@ -138,8 +138,8 @@
         height: 56px;
         padding: 18px 24px 18px 24px;
         border-radius: 60px;
-        color: rgb(250, 250, 250);
-        background-color: rgb(237, 59, 68);
+        color: var(--white);
+        background-color: var(--red);
         margin-left: auto;
         font-size: 16px;
         font-weight: 500;
@@ -221,7 +221,7 @@
 }
 
 .close-icon {
-    fill: #fff;
+    fill: var(--white);
 }
 
 .burger-menu-list {
@@ -234,7 +234,7 @@
 }
 
 .burger-list-item-link {
-    color: rgb(250, 250, 250);
+    color: var(--white);
     font-size: 16px;
     font-weight: 500;
     line-height: 1.19;
@@ -259,8 +259,8 @@
     height: 56px;
     padding: 18px 24px 18px 24px;
     border-radius: 60px;
-    color: rgb(250, 250, 250);
-    background-color: rgb(237, 59, 68);
+    color: var(--white);
+    background-color: var(--red);
     margin-left: auto;
     animation-duration: 1s;
     animation-name: slidein;

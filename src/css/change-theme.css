@@ -53,7 +53,7 @@
 }
 
 .btn-theme-red {
-    background-color: rgb(237, 59, 68);
+    background-color: var(--red);
 }
 
 .btn-theme-green {
@@ -327,8 +327,8 @@
 
 /* Change color btn */
 .theme-red[data-theme-btn] {
-    color: rgb(250, 250, 250);
-    background-color: rgb(237, 59, 68);
+    color: var(--white);
+    background-color: var(--red);
 }
 
 .theme-red:hover[data-theme-btn] {
@@ -341,7 +341,7 @@
 }
 
 .theme-green[data-theme-btn] {
-    color: rgb(250, 250, 250);
+    color: var(--white);
     background-color: #C6E327;
 }
 
@@ -355,7 +355,7 @@
 }
 
 .theme-blue[data-theme-btn] {
-    color: rgb(250, 250, 250);
+    color: var(--white);
     background-color: #0041E8;
 }
 
@@ -369,7 +369,7 @@
 }
 
 .theme-orange[data-theme-btn] {
-    color: rgb(250, 250, 250);
+    color: var(--white);
     background-color: #E6533C;
 }
 
@@ -383,7 +383,7 @@
 }
 
 .theme-dark-green[data-theme-btn] {
-    color: rgb(250, 250, 250);
+    color: var(--white);
     background-color: #2B4441;
 }
 
@@ -398,7 +398,7 @@
 }
 
 .theme-yellow[data-theme-btn] {
-    color: rgb(250, 250, 250);
+    color: var(--white);
     background-color: #FF7F08;
 }
 
@@ -414,15 +414,15 @@
 /* Change color text */
 
 .theme-red:hover[data-theme-text] {
-    color: rgb(237, 59, 68);
+    color: var(--red);
 }
 
 .theme-red:focus[data-theme-text] {
-    color: rgb(237, 59, 68);
+    color: var(--red);
 }
 
 .theme-red:active[data-theme-text] {
-    color: rgb(237, 59, 68);
+    color: var(--red);
 }
 
 .theme-green:hover[data-theme-text] {
@@ -488,7 +488,7 @@
 /* Change color text SPAN */
 
 .theme-red[data-theme-text-span] {
-    color: rgb(237, 59, 68);
+    color: var(--red);
     transition: color var(--timing-function);
 }
 
@@ -520,7 +520,7 @@
 /* Change color SVG */
 
 .theme-red[data-theme-text-svg] {
-    background: rgb(237, 59, 68);
+    background: var(--red);
     transition: color var(--timing-function);
 }
 
@@ -552,7 +552,7 @@
 /* Change color Swiper-active */
 
 .swiper-slide-active.theme-red[data-theme-swiper-active] {
-    background-color: rgb(237, 59, 68);
+    background-color: var(--red);
     transition: background-color var(--timing-function);
 }
 
@@ -584,7 +584,7 @@
 /* Change color border Up Btn */
 
 .theme-red[data-theme-btn-up] {
-    border-color: rgb(237, 59, 68);
+    border-color: var(--red);
     transition: border-color var(--timing-function);
 }
 

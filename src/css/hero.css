@@ -60,15 +60,15 @@
 .hero-item:hover,
 .hero-item:focus,
 .hero-item:active {
-  border-color: #fafafa;
+  border-color: var(--white);
 }
 
 .social-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 28px;
-  min-height: 28px;
+  min-width: 24px;
+  min-height: 24px;
 }
 
 @media only screen and (min-width: 375px) {
@@ -94,13 +94,13 @@
 .heder-contact-info:hover,
 .heder-contact-info:focus,
 .heder-contact-info:active {
-  border-color: #fafafa;
+  border-color: var(--white);
 }
 
 .heder-contact-info-link {
   display: flex;
-  min-width: 168px;
-  min-height: 28px;
+  min-width: 166px;
+  min-height: 24px;
   justify-content: center;
   align-items: center;
 }
