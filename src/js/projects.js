@@ -6,7 +6,7 @@ import 'swiper/css/keyboard';
 
 const swiper = new Swiper('.proj-swiper', {
   modules: [Navigation, Keyboard],
-  speed: 500,
+  speed: 1500,
   navigation: {
     disabledClass: 'proj-btn-disabled',
     nextEl: '.proj-swiper-button-next',
