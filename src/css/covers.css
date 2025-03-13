@@ -2,7 +2,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(/img/covers/vectors@1x.png);
+  transition: background-image 0.3s ease-in-out;
 }
 
 .covers-container {
@@ -63,16 +63,5 @@
   .covers-list {
     column-gap: 60px;
     margin-bottom: 60px;
-  }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min--moz-device-pixel-ratio: 2),
-  only screen and (min-device-pixel-ratio: 2),
-  only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min-resolution: 192dpi),
-  only screen and (min-resolution: 2dppx) {
-  .covers-section {
-    background-image: url(/img/covers/vectors@2x.png);
   }
 }

@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const hero = document.querySelector('[data-theme-hero]');
     const burgMenu = document.querySelector('[data-theme-burg-menu]');
+    const coversSectionAttr = document.querySelector('[data-theme-covers]');
     const themeButtons = document.querySelectorAll('[data-theme-btn]');
     const themeTexts = document.querySelectorAll('[data-theme-text]');
     const themeTextsSpan = document.querySelectorAll('[data-theme-text-span]');
@@ -18,17 +19,23 @@ document.addEventListener('DOMContentLoaded', () => {
     applyTheme(savedTheme);
 
     function applyTheme(theme) {
-        hero.classList.remove('theme-red', 'theme-green', 'theme-blue', 'theme-orange', 'theme-dark-green', 'theme-yellow');
-        burgMenu.classList.remove('theme-red', 'theme-green', 'theme-blue', 'theme-orange', 'theme-dark-green', 'theme-yellow');
-        themeButtons.forEach(button => button.classList.remove('theme-red', 'theme-green', 'theme-blue', 'theme-orange', 'theme-dark-green', 'theme-yellow'));
-        themeTexts.forEach(text => text.classList.remove('theme-red', 'theme-green', 'theme-blue', 'theme-orange', 'theme-dark-green', 'theme-yellow'));
-        themeTextsSpan.forEach(text => text.classList.remove('theme-red', 'theme-green', 'theme-blue', 'theme-orange', 'theme-dark-green', 'theme-yellow'));
-        themeSvgFill.forEach(text => text.classList.remove('theme-red', 'theme-green', 'theme-blue', 'theme-orange', 'theme-dark-green', 'theme-yellow'));
-        themeSwiperBg.forEach(text => text.classList.remove('theme-red', 'theme-green', 'theme-blue', 'theme-orange', 'theme-dark-green', 'theme-yellow'));
-        themeBgUpBtn.forEach(text => text.classList.remove('theme-red', 'theme-green', 'theme-blue', 'theme-orange', 'theme-dark-green', 'theme-yellow'));
+        const allThemes = ['theme-red', 'theme-green', 'theme-blue', 'theme-orange', 'theme-dark-green', 'theme-yellow'];
 
-        hero.classList.add(theme);
-        burgMenu.classList.add(theme);
+        hero?.classList.remove(...allThemes);
+        burgMenu?.classList.remove(...allThemes);
+        coversSectionAttr?.classList.remove(...allThemes);
+
+        themeButtons.forEach(button => button.classList.remove(...allThemes));
+        themeTexts.forEach(text => text.classList.remove(...allThemes));
+        themeTextsSpan.forEach(text => text.classList.remove(...allThemes));
+        themeSvgFill.forEach(text => text.classList.remove(...allThemes));
+        themeSwiperBg.forEach(text => text.classList.remove(...allThemes));
+        themeBgUpBtn.forEach(text => text.classList.remove(...allThemes));
+
+        hero?.classList.add(theme);
+        burgMenu?.classList.add(theme);
+        coversSectionAttr?.classList.add(theme);
+
         themeButtons.forEach(button => button.classList.add(theme));
         themeTexts.forEach(text => text.classList.add(theme));
         themeTextsSpan.forEach(text => text.classList.add(theme));

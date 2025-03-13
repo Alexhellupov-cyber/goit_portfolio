@@ -1,594 +1,644 @@
 .theme-buttons {
-    position: absolute;
-    bottom: 80px;
-    left: 50%;
-    transform: translate(-50%);
-    display: flex;
-    gap: 10px;
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  gap: 10px;
 }
 
 .theme-buttons::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2));
-    box-shadow: -50px 0 100px rgba(0, 0, 0, 0.8), -30px 0 60px rgba(0, 0, 0, 0.5);
-    filter: blur(15px);
-    border-radius: 15px;
-    z-index: -1;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2));
+  box-shadow: -50px 0 100px rgba(0, 0, 0, 0.8), -30px 0 60px rgba(0, 0, 0, 0.5);
+  filter: blur(15px);
+  border-radius: 15px;
+  z-index: -1;
 }
 
 .theme-buttons button {
-    position: relative;
-    padding: 0;
-    margin: 0;
-    border: none;
-    width: 26px;
-    height: 26px;
-    border-radius: 50%;
-    transition: scale var(--timing-function);
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  transition: scale var(--timing-function);
 }
 
 .theme-buttons button:hover,
 .theme-buttons button:focus {
-    scale: 1.2;
+  scale: 1.2;
 }
 
 @media screen and (min-width: 768px) {
-    .theme-buttons {
-        bottom: 14px;
-        left: 32px;
-        transform: translate(0);
-    }
+  .theme-buttons {
+    bottom: 14px;
+    left: 32px;
+    transform: translate(0);
+  }
 
-    .theme-buttons button {
-        width: 30px;
-        height: 30px;
-    }
+  .theme-buttons button {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .btn-theme-red {
-    background-color: var(--red);
+  background-color: var(--red);
 }
 
 .btn-theme-green {
-    background-color: #C6E327;
+  background-color: #c6e327;
 }
 
 .btn-theme-blue {
-    background-color: #0041E8;
+  background-color: #0041e8;
 }
 
 .btn-theme-orange {
-    background-color: #E6533C;
+  background-color: #e6533c;
 }
 
 .btn-theme-dark-green {
-    background-color: #2B4441;
+  background-color: #2b4441;
 }
 
 .btn-theme-yellow {
-    background-color: #FF7F08;
+  background-color: #ff7f08;
 }
 
 .active-btn-change {
-    scale: 1.2;
-    transition: scale var(--timing-function);
+  scale: 1.2;
+  transition: scale var(--timing-function);
 }
 
 .theme-red[data-theme-burg-menu] {
-    background-image: url('../img/hero/burg-menu_red.png');
+  background-image: url('../img/hero/burg-menu_red.png');
 }
 
 .theme-green[data-theme-burg-menu] {
-    background-image: url('../img/hero/burg-menu-green.png');
+  background-image: url('../img/hero/burg-menu-green.png');
 }
 
 .theme-blue[data-theme-burg-menu] {
-    background-image: url('../img/hero/burg-menu-blue.png');
+  background-image: url('../img/hero/burg-menu-blue.png');
 }
 
 .theme-orange[data-theme-burg-menu] {
-    background-image: url('../img/hero/burg-menu-orange.png');
+  background-image: url('../img/hero/burg-menu-orange.png');
 }
 
 .theme-dark-green[data-theme-burg-menu] {
-    background-image: url('../img/hero/burg-menu-dark-green.png');
+  background-image: url('../img/hero/burg-menu-dark-green.png');
 }
 
 .theme-yellow[data-theme-burg-menu] {
-    background-image: url('../img/hero/burg-menu-yellow.png');
+  background-image: url('../img/hero/burg-menu-yellow.png');
 }
 
 @media (min-resolution: 2dppx) {
-    .theme-red[data-theme-burg-menu] {
-        background-image: url('../img/hero/burg-menu_red_2x.png');
-        background-size: cover;
-    }
+  .theme-red[data-theme-burg-menu] {
+    background-image: url('../img/hero/burg-menu_red_2x.png');
+    background-size: cover;
+  }
 
-    .theme-green[data-theme-burg-menu] {
-        background-image: url('../img/hero/burg-menu-green-2x.png');
-    }
+  .theme-green[data-theme-burg-menu] {
+    background-image: url('../img/hero/burg-menu-green-2x.png');
+  }
 
-    .theme-blue[data-theme-burg-menu] {
-        background-image: url('../img/hero/burg-menu-blue-2x.png');
-    }
+  .theme-blue[data-theme-burg-menu] {
+    background-image: url('../img/hero/burg-menu-blue-2x.png');
+  }
 
-    .theme-orange[data-theme-burg-menu] {
-        background-image: url('../img/hero/burg-menu-orange-2x.png');
-    }
+  .theme-orange[data-theme-burg-menu] {
+    background-image: url('../img/hero/burg-menu-orange-2x.png');
+  }
 
-    .theme-dark-green[data-theme-burg-menu] {
-        background-image: url('../img/hero/burg-menu-dark-green-2x.png');
-    }
+  .theme-dark-green[data-theme-burg-menu] {
+    background-image: url('../img/hero/burg-menu-dark-green-2x.png');
+  }
 
-    .theme-yellow[data-theme-burg-menu] {
-        background-image: url('../img/hero/burg-menu-yellow-2x.png');
-    }
+  .theme-yellow[data-theme-burg-menu] {
+    background-image: url('../img/hero/burg-menu-yellow-2x.png');
+  }
 }
 
 [data-theme-hero] {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: overlay;
-    transition: background-image var(--timing-function);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  transition: background-image var(--timing-function);
 }
 
 .theme-red[data-theme-hero] {
-    background-image: url('../img/hero/hero_red_mob.png');
+  background-image: url('../img/hero/hero_red_mob.png');
 }
 
 .theme-green[data-theme-hero] {
-    background-image: url('../img/hero/hero_green_mob.png');
+  background-image: url('../img/hero/hero_green_mob.png');
 }
 
 .theme-blue[data-theme-hero] {
-    background-image: url('../img/hero/hero_blue_mob.png');
+  background-image: url('../img/hero/hero_blue_mob.png');
 }
 
 .theme-orange[data-theme-hero] {
-    background-image: url('../img/hero/hero_orange_mob.png');
+  background-image: url('../img/hero/hero_orange_mob.png');
 }
 
 .theme-dark-green[data-theme-hero] {
-    background-image: url('../img/hero/hero_dark_green_mob.png');
+  background-image: url('../img/hero/hero_dark_green_mob.png');
 }
 
 .theme-yellow[data-theme-hero] {
-    background-image: url('../img/hero/hero_yellow_mob.png');
+  background-image: url('../img/hero/hero_yellow_mob.png');
 }
 
 @media (min-resolution: 2dppx) {
-    .theme-red[data-theme-hero] {
-        background-image: url('../img/hero/hero_red_mob_2x.png');
-    }
+  .theme-red[data-theme-hero] {
+    background-image: url('../img/hero/hero_red_mob_2x.png');
+  }
 
-    .theme-green[data-theme-hero] {
-        background-image: url('../img/hero/hero_green_mob_2x.png');
-    }
+  .theme-green[data-theme-hero] {
+    background-image: url('../img/hero/hero_green_mob_2x.png');
+  }
 
-    .theme-blue[data-theme-hero] {
-        background-image: url('../img/hero/hero_blue_mob_2x.png');
-    }
+  .theme-blue[data-theme-hero] {
+    background-image: url('../img/hero/hero_blue_mob_2x.png');
+  }
 
-    .theme-orange[data-theme-hero] {
-        background-image: url('../img/hero/hero_orange_mob_2x.png');
-    }
+  .theme-orange[data-theme-hero] {
+    background-image: url('../img/hero/hero_orange_mob_2x.png');
+  }
 
-    .theme-dark-green[data-theme-hero] {
-        background-image: url('../img/hero/hero_dark_green_mob_2x.png');
-    }
+  .theme-dark-green[data-theme-hero] {
+    background-image: url('../img/hero/hero_dark_green_mob_2x.png');
+  }
 
-    .theme-yellow[data-theme-hero] {
-        background-image: url('../img/hero/hero_yellow_mob_2x.png');
-    }
+  .theme-yellow[data-theme-hero] {
+    background-image: url('../img/hero/hero_yellow_mob_2x.png');
+  }
 }
 
 @media only screen and (min-width: 768px) {
-    .theme-red[data-theme-hero] {
-        background-image: url('../img/hero/hero_red_tab.png');
-    }
+  .theme-red[data-theme-hero] {
+    background-image: url('../img/hero/hero_red_tab.png');
+  }
 
-    .theme-green[data-theme-hero] {
-        background-image: url('../img/hero/hero_green_tab.png');
-    }
+  .theme-green[data-theme-hero] {
+    background-image: url('../img/hero/hero_green_tab.png');
+  }
 
-    .theme-blue[data-theme-hero] {
-        background-image: url('../img/hero/hero_blue_tab.png');
-    }
+  .theme-blue[data-theme-hero] {
+    background-image: url('../img/hero/hero_blue_tab.png');
+  }
 
-    .theme-orange[data-theme-hero] {
-        background-image: url('../img/hero/hero_orange_tab.png');
-    }
+  .theme-orange[data-theme-hero] {
+    background-image: url('../img/hero/hero_orange_tab.png');
+  }
 
-    .theme-dark-green[data-theme-hero] {
-        background-image: url('../img/hero/hero_dark_green_tab.png');
-    }
+  .theme-dark-green[data-theme-hero] {
+    background-image: url('../img/hero/hero_dark_green_tab.png');
+  }
 
-    .theme-yellow[data-theme-hero] {
-        background-image: url('../img/hero/hero_yellow_tab.png');
-    }
+  .theme-yellow[data-theme-hero] {
+    background-image: url('../img/hero/hero_yellow_tab.png');
+  }
 }
 
 @media only screen and (min-width: 768px) and (min-resolution: 2dppx) {
-    .theme-red[data-theme-hero] {
-        background-image: url('../img/hero/hero_red_tab_2x.png');
-    }
+  .theme-red[data-theme-hero] {
+    background-image: url('../img/hero/hero_red_tab_2x.png');
+  }
 
-    .theme-green[data-theme-hero] {
-        background-image: url('../img/hero/hero_green_tab_2x.png');
-    }
+  .theme-green[data-theme-hero] {
+    background-image: url('../img/hero/hero_green_tab_2x.png');
+  }
 
-    .theme-blue[data-theme-hero] {
-        background-image: url('../img/hero/hero_blue_tab_2x.png');
-    }
+  .theme-blue[data-theme-hero] {
+    background-image: url('../img/hero/hero_blue_tab_2x.png');
+  }
 
-    .theme-orange[data-theme-hero] {
-        background-image: url('../img/hero/hero_orange_tab_2x.png');
-    }
+  .theme-orange[data-theme-hero] {
+    background-image: url('../img/hero/hero_orange_tab_2x.png');
+  }
 
-    .theme-dark-green[data-theme-hero] {
-        background-image: url('../img/hero/hero_dark_green_tab_2x.png');
-    }
+  .theme-dark-green[data-theme-hero] {
+    background-image: url('../img/hero/hero_dark_green_tab_2x.png');
+  }
 
-    .theme-yellow[data-theme-hero] {
-        background-image: url('../img/hero/hero_yellow_tab_2x.png');
-    }
+  .theme-yellow[data-theme-hero] {
+    background-image: url('../img/hero/hero_yellow_tab_2x.png');
+  }
 }
 
 @media only screen and (min-width: 1440px) {
-    .theme-red[data-theme-hero] {
-        background-image: url('../img/hero/hero_red.png');
-    }
+  .theme-red[data-theme-hero] {
+    background-image: url('../img/hero/hero_red.png');
+  }
 
-    .theme-green[data-theme-hero] {
-        background-image: url('../img/hero/hero_green.png');
-    }
+  .theme-green[data-theme-hero] {
+    background-image: url('../img/hero/hero_green.png');
+  }
 
-    .theme-blue[data-theme-hero] {
-        background-image: url('../img/hero/hero_blue.png');
-    }
+  .theme-blue[data-theme-hero] {
+    background-image: url('../img/hero/hero_blue.png');
+  }
 
-    .theme-orange[data-theme-hero] {
-        background-image: url('../img/hero/hero_orange.png');
-    }
+  .theme-orange[data-theme-hero] {
+    background-image: url('../img/hero/hero_orange.png');
+  }
 
-    .theme-dark-green[data-theme-hero] {
-        background-image: url('../img/hero/hero_dark_green.png');
-    }
+  .theme-dark-green[data-theme-hero] {
+    background-image: url('../img/hero/hero_dark_green.png');
+  }
 
-    .theme-yellow[data-theme-hero] {
-        background-image: url('../img/hero/hero_yellow.png');
-    }
+  .theme-yellow[data-theme-hero] {
+    background-image: url('../img/hero/hero_yellow.png');
+  }
 }
 
 @media only screen and (min-width: 1440px) and (min-resolution: 2dppx) {
-    .theme-red[data-theme-hero] {
-        background-image: url('../img/hero/hero_red_2x.png');
-    }
+  .theme-red[data-theme-hero] {
+    background-image: url('../img/hero/hero_red_2x.png');
+  }
 
-    .theme-green[data-theme-hero] {
-        background-image: url('../img/hero/hero_green_2x.png');
-    }
+  .theme-green[data-theme-hero] {
+    background-image: url('../img/hero/hero_green_2x.png');
+  }
 
-    .theme-blue[data-theme-hero] {
-        background-image: url('../img/hero/hero_blue_2x.png');
-    }
+  .theme-blue[data-theme-hero] {
+    background-image: url('../img/hero/hero_blue_2x.png');
+  }
 
-    .theme-orange[data-theme-hero] {
-        background-image: url('../img/hero/hero_orange_2x.png');
-    }
+  .theme-orange[data-theme-hero] {
+    background-image: url('../img/hero/hero_orange_2x.png');
+  }
 
-    .theme-dark-green[data-theme-hero] {
-        background-image: url('../img/hero/hero_dark_green_2x.png');
-    }
+  .theme-dark-green[data-theme-hero] {
+    background-image: url('../img/hero/hero_dark_green_2x.png');
+  }
 
-    .theme-yellow[data-theme-hero] {
-        background-image: url('../img/hero/hero_yellow_2x.png');
-    }
+  .theme-yellow[data-theme-hero] {
+    background-image: url('../img/hero/hero_yellow_2x.png');
+  }
 }
 
 @media only screen and (min-width: 2048px) {
-    .theme-red[data-theme-hero] {
-        background-image: url('../img/hero/hero_red_3x.png');
-    }
+  .theme-red[data-theme-hero] {
+    background-image: url('../img/hero/hero_red_3x.png');
+  }
 
-    .theme-green[data-theme-hero] {
-        background-image: url('../img/hero/hero_green_3x.png');
-    }
+  .theme-green[data-theme-hero] {
+    background-image: url('../img/hero/hero_green_3x.png');
+  }
 
-    .theme-blue[data-theme-hero] {
-        background-image: url('../img/hero/hero_blue_3x.png');
-    }
+  .theme-blue[data-theme-hero] {
+    background-image: url('../img/hero/hero_blue_3x.png');
+  }
 
-    .theme-orange[data-theme-hero] {
-        background-image: url('../img/hero/hero_orange_3x.png');
-    }
+  .theme-orange[data-theme-hero] {
+    background-image: url('../img/hero/hero_orange_3x.png');
+  }
 
-    .theme-dark-green[data-theme-hero] {
-        background-image: url('../img/hero/hero_dark_green_3x.png');
-    }
+  .theme-dark-green[data-theme-hero] {
+    background-image: url('../img/hero/hero_dark_green_3x.png');
+  }
 
-    .theme-yellow[data-theme-hero] {
-        background-image: url('../img/hero/hero_yellow_3x.png');
-    }
+  .theme-yellow[data-theme-hero] {
+    background-image: url('../img/hero/hero_yellow_3x.png');
+  }
 }
 .theme-red[data-theme-btn] {
-    color: var(--white);
-    background-color: var(--red);
+  color: var(--white);
+  background-color: var(--red);
 }
 
 .theme-red:hover[data-theme-btn] {
-    background-color: rgb(224, 55, 63);
-    transform: scale(1.05);
+  background-color: rgb(224, 55, 63);
+  transform: scale(1.05);
 }
 
 .theme-red:focus[data-theme-btn] {
-    background-color: rgb(224, 55, 63);
+  background-color: rgb(224, 55, 63);
 }
 
 .theme-green[data-theme-btn] {
-    color: var(--white);
-    background-color: #C6E327;
+  color: var(--white);
+  background-color: #c6e327;
 }
 
 .theme-green:hover[data-theme-btn] {
-    background-color: #596808;
-    transform: scale(1.05);
+  background-color: #596808;
+  transform: scale(1.05);
 }
 
 .theme-green:focus[data-theme-btn] {
-    background-color: #596808;
+  background-color: #596808;
 }
 
 .theme-blue[data-theme-btn] {
-    color: var(--white);
-    background-color: #0041E8;
+  color: var(--white);
+  background-color: #0041e8;
 }
 
 .theme-blue:hover[data-theme-btn] {
-    background-color: #001958;
-    transform: scale(1.05);
+  background-color: #001958;
+  transform: scale(1.05);
 }
 
 .theme-blue:focus[data-theme-btn] {
-    background-color: #001958;
+  background-color: #001958;
 }
 
 .theme-orange[data-theme-btn] {
-    color: var(--white);
-    background-color: #E6533C;
+  color: var(--white);
+  background-color: #e6533c;
 }
 
 .theme-orange:hover[data-theme-btn] {
-    background-color: #9F3626;
-    transform: scale(1.05);
+  background-color: #9f3626;
+  transform: scale(1.05);
 }
 
 .theme-orange:focus[data-theme-btn] {
-    background-color: #9F3626;
+  background-color: #9f3626;
 }
 
 .theme-dark-green[data-theme-btn] {
-    color: var(--white);
-    background-color: #2B4441;
+  color: var(--white);
+  background-color: #2b4441;
 }
 
 .theme-dark-green:hover[data-theme-btn] {
-    background-color: #1E3633;
-    transform: scale(1.05);
+  background-color: #1e3633;
+  transform: scale(1.05);
 }
 
 .theme-dark-green:focus[data-theme-btn] {
-    background-color: #1E3633;
-    ;
+  background-color: #1e3633;
 }
 
 .theme-yellow[data-theme-btn] {
-    color: var(--white);
-    background-color: #FF7F08;
+  color: var(--white);
+  background-color: #ff7f08;
 }
 
 .theme-yellow:hover[data-theme-btn] {
-    background-color: #AC5300;
-    transform: scale(1.05);
+  background-color: #ac5300;
+  transform: scale(1.05);
 }
 
 .theme-yellow:focus[data-theme-btn] {
-    background-color: #AC5300;
+  background-color: #ac5300;
 }
 
 .theme-red:hover[data-theme-text] {
-    color: var(--red);
+  color: var(--red);
 }
 
 .theme-red:focus[data-theme-text] {
-    color: var(--red);
+  color: var(--red);
 }
 
 .theme-red:active[data-theme-text] {
-    color: var(--red);
+  color: var(--red);
 }
 
 .theme-green:hover[data-theme-text] {
-    color: #C6E327;
+  color: #c6e327;
 }
 
 .theme-green:focus[data-theme-text] {
-    color: #C6E327;
+  color: #c6e327;
 }
 
 .theme-green:active[data-theme-text] {
-    color: #C6E327;
+  color: #c6e327;
 }
 
 .theme-blue:hover[data-theme-text] {
-    color: #0041E8;
+  color: #0041e8;
 }
 
 .theme-blue:focus[data-theme-text] {
-    color: #0041E8;
+  color: #0041e8;
 }
 
 .theme-blue:active[data-theme-text] {
-    color: #0041E8;
+  color: #0041e8;
 }
 
 .theme-orange:hover[data-theme-text] {
-    color: #E6533C;
+  color: #e6533c;
 }
 
 .theme-orange:focus[data-theme-text] {
-    color: #E6533C;
+  color: #e6533c;
 }
 
 .theme-orange:active[data-theme-text] {
-    color: #E6533C;
+  color: #e6533c;
 }
 
 .theme-dark-green:hover[data-theme-text] {
-    color: #2B4441;
+  color: #2b4441;
 }
 
 .theme-dark-green:focus[data-theme-text] {
-    color: #2B4441;
+  color: #2b4441;
 }
 
 .theme-dark-green:active[data-theme-text] {
-    color: #2B4441;
+  color: #2b4441;
 }
 
 .theme-yellow:hover[data-theme-text] {
-    color: #FF7F08;
+  color: #ff7f08;
 }
 
 .theme-yellow:focus[data-theme-text] {
-    color: #FF7F08;
+  color: #ff7f08;
 }
 
 .theme-yellow:active[data-theme-text] {
-    color: #FF7F08;
+  color: #ff7f08;
 }
 
 .theme-red[data-theme-text-span] {
-    color: var(--red);
-    transition: color var(--timing-function);
+  color: var(--red);
+  transition: color var(--timing-function);
 }
 
 .theme-green[data-theme-text-span] {
-    color: #C6E327;
-    transition: color var(--timing-function);
+  color: #c6e327;
+  transition: color var(--timing-function);
 }
 
 .theme-blue[data-theme-text-span] {
-    color: #0041E8;
-    transition: color var(--timing-function);
+  color: #0041e8;
+  transition: color var(--timing-function);
 }
 
 .theme-orange[data-theme-text-span] {
-    color: #E6533C;
-    transition: color var(--timing-function);
+  color: #e6533c;
+  transition: color var(--timing-function);
 }
 
 .theme-dark-green[data-theme-text-span] {
-    color: #2B4441;
-    transition: color var(--timing-function);
+  color: #2b4441;
+  transition: color var(--timing-function);
 }
 
 .theme-yellow[data-theme-text-span] {
-    color: #FF7F08;
-    transition: color var(--timing-function);
+  color: #ff7f08;
+  transition: color var(--timing-function);
 }
 
 .theme-red[data-theme-text-svg] {
-    background: var(--red);
-    transition: color var(--timing-function);
+  background: var(--red);
+  transition: color var(--timing-function);
 }
 
 .theme-green[data-theme-text-svg] {
-    background: #C6E327;
-    transition: color var(--timing-function);
+  background: #c6e327;
+  transition: color var(--timing-function);
 }
 
 .theme-blue[data-theme-text-svg] {
-    background: #0041E8;
-    transition: color var(--timing-function);
+  background: #0041e8;
+  transition: color var(--timing-function);
 }
 
 .theme-orange[data-theme-text-svg] {
-    background: #E6533C;
-    transition: color var(--timing-function);
+  background: #e6533c;
+  transition: color var(--timing-function);
 }
 
 .theme-dark-green[data-theme-text-svg] {
-    background: #2B4441;
-    transition: color var(--timing-function);
+  background: #2b4441;
+  transition: color var(--timing-function);
 }
 
 .theme-yellow[data-theme-text-svg] {
-    background: #FF7F08;
-    transition: color var(--timing-function);
+  background: #ff7f08;
+  transition: color var(--timing-function);
 }
 
 .swiper-slide-active.theme-red[data-theme-swiper-active] {
-    background-color: var(--red);
-    transition: background-color var(--timing-function);
+  background-color: var(--red);
+  transition: background-color var(--timing-function);
 }
 
 .swiper-slide-active.theme-green[data-theme-swiper-active] {
-    background-color: #C6E327;
-    transition: background-color var(--timing-function);
+  background-color: #c6e327;
+  transition: background-color var(--timing-function);
 }
 
 .swiper-slide-active.theme-blue[data-theme-swiper-active] {
-    background-color: #0041E8;
-    transition: background-color var(--timing-function);
+  background-color: #0041e8;
+  transition: background-color var(--timing-function);
 }
 
 .swiper-slide-active.theme-orange[data-theme-swiper-active] {
-    background-color: #E6533C;
-    transition: background-color var(--timing-function);
+  background-color: #e6533c;
+  transition: background-color var(--timing-function);
 }
 
 .swiper-slide-active.theme-dark-green[data-theme-swiper-active] {
-    background-color: #2B4441;
-    transition: background-color var(--timing-function);
+  background-color: #2b4441;
+  transition: background-color var(--timing-function);
 }
 
 .swiper-slide-active.theme-yellow[data-theme-swiper-active] {
-    background-color: #FF7F08;
-    transition: background-color var(--timing-function);
+  background-color: #ff7f08;
+  transition: background-color var(--timing-function);
 }
 
 .theme-red[data-theme-btn-up] {
-    border-color: var(--red);
-    transition: border-color var(--timing-function);
+  border-color: var(--red);
+  transition: border-color var(--timing-function);
 }
 
 .theme-green[data-theme-btn-up] {
-    border-color: #C6E327;
-    transition: border-color var(--timing-function);
+  border-color: #c6e327;
+  transition: border-color var(--timing-function);
 }
 
 .theme-blue[data-theme-btn-up] {
-    border-color: #0041E8;
-    transition: border-color var(--timing-function);
+  border-color: #0041e8;
+  transition: border-color var(--timing-function);
 }
 
 .theme-orange[data-theme-btn-up] {
-    border-color: #E6533C;
-    transition: border-color var(--timing-function);
+  border-color: #e6533c;
+  transition: border-color var(--timing-function);
 }
 
 .theme-dark-green[data-theme-btn-up] {
-    border-color: #2B4441;
-    transition: border-color var(--timing-function);
+  border-color: #2b4441;
+  transition: border-color var(--timing-function);
 }
 
 .theme-yellow[data-theme-btn-up] {
-    border-color: #FF7F08;
-    transition: border-color var(--timing-function);
+  border-color: #ff7f08;
+  transition: border-color var(--timing-function);
+}
+
+.theme-red[data-theme-covers] {
+  background-image: url('../img/covers/vectors_red@1x.png');
+}
+
+.theme-green[data-theme-covers] {
+  background-image: url('../img/covers/vectors_green@1x.png');
+}
+
+.theme-blue[data-theme-covers] {
+  background-image: url('../img/covers/vectors_blue@1x.png');
+}
+
+.theme-orange[data-theme-covers] {
+  background-image: url('../img/covers/vectors_orange@1x.png');
+}
+
+.theme-dark-green[data-theme-covers] {
+  background-image: url('../img/covers/vectors_darkgreen@1x.png');
+}
+
+.theme-yellow[data-theme-covers] {
+  background-image: url('../img/covers/vectors_yellow@1x.png');
+}
+
+/* Підтримка Retina-дисплеїв */
+@media only screen and (min-resolution: 2dppx) {
+  .theme-red[data-theme-covers] {
+    background-image: url('../img/covers/vectors_red@2x.png');
+  }
+
+  .theme-green[data-theme-covers] {
+    background-image: url('../img/covers/vectors_green@2x.png');
+  }
+
+  .theme-blue[data-theme-covers] {
+    background-image: url('../img/covers/vectors_blue@2x.png');
+  }
+
+  .theme-orange[data-theme-covers] {
+    background-image: url('../img/covers/vectors_orange@2x.png');
+  }
+
+  .theme-dark-green[data-theme-covers] {
+    background-image: url('../img/covers/vectors_darkgreen@2x.png');
+  }
+
+  .theme-yellow[data-theme-covers] {
+    background-image: url('../img/covers/vectors_yellow@2x.png');
+  }
 }
