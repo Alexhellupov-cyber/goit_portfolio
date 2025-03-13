@@ -6,7 +6,7 @@ Team-Lead                   https://github.com/Alexhellupov-cyber
 Дудак Віолета               
 Scrum Master                https://github.com/violettadudiak0210
 
-Воробьйов Дмитро            
+Воробйов Дмитро            
 developer                   https://github.com/DmytroVorobiov1212
 
 Гнатенко Олена              
